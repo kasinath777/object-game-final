@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Object finding game</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+<h1 class="btn btn-info heading">Object Finding Game</h1>
+<br>
+<p>In this game you will have to find the object that is displayed below and place that object. Click submit to win the game.</p>
+<p>Name of the object: <span id="object"></span></p>
+<button onclick="take_snapshot()" class="btn btn-warning" id="takepic">Take a picture</button>
+<div id="camera"></div>
+<button class="btn btn-warning" onclick="identify_image()" id="submit">Submit</button> 
+<h2 id="result1"></h2>
+<h2 id="result">Result:</h2>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
